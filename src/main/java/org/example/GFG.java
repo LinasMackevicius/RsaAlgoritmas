@@ -54,8 +54,14 @@ public class GFG {
     {
         GetInput inputGetter = new GetInput();
 
+        System.out.print("First prime number\t");
         double p = inputGetter.returnMyInt(); // a prime number
+
+        System.out.print("Second prime number\t");
         double q = inputGetter.returnMyInt(); // another prime number
+
+        System.out.print("Message text\t");
+        String msg = inputGetter.returnMyString(); // the message to be converted
 
         // Stores the first part of public key:
         double n = p * q;
@@ -76,9 +82,8 @@ public class GFG {
 
         double d = extendedEuclidean(e, phi); // private exponent
 
-        String msg = inputGetter.returnMyString(); // the message to be converted
-
         byte[] bytes = msg.getBytes(); // get the ASCII byte array representation of the message
+
         double numMsg = ByteBuffer.wrap(bytes).getDouble(); // convert the byte array to a double
 
         System.out.println("Message data = " + msg);
