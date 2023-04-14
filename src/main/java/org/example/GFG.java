@@ -2,11 +2,6 @@ package org.example;/*package whatever //do not write package name here */
 
 import java.nio.ByteBuffer;
 
-/*
- * Java program for RSA asymmetric cryptographic algorithm.
- * For demonstration, values are
- * relatively small compared to practical application
- */
 public class GFG {
     public static double greatestCommonDivisor(double a, double h)
     {
